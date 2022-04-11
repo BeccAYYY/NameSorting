@@ -1,0 +1,15 @@
+D:\Projects\C#\NameSorting\bin\Debug\net6.0\NameSorting.exe
+D:\Projects\C#\NameSorting\bin\Debug\net6.0\NameSorting.deps.json
+D:\Projects\C#\NameSorting\bin\Debug\net6.0\NameSorting.runtimeconfig.json
+D:\Projects\C#\NameSorting\bin\Debug\net6.0\NameSorting.dll
+D:\Projects\C#\NameSorting\bin\Debug\net6.0\ref\NameSorting.dll
+D:\Projects\C#\NameSorting\bin\Debug\net6.0\NameSorting.pdb
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.csproj.AssemblyReference.cache
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.AssemblyInfoInputs.cache
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.AssemblyInfo.cs
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.csproj.CoreCompileInputs.cache
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.dll
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\ref\NameSorting.dll
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.pdb
+D:\Projects\C#\NameSorting\obj\Debug\net6.0\NameSorting.genruntimeconfig.cache
