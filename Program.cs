@@ -13,16 +13,12 @@ string[] OrderNames(string[] namesList)
     return namesList.OrderBy(name => LastName(name)).ThenBy(name => name).ToArray();
 }
 
-string[] names = OrderNames(System.IO.File.ReadAllLines(@"unsorted-names.txt"));
+string[] names = OrderNames(File.ReadAllLines(@"unsorted-names.txt"));
+
+using StreamWriter file = new("sorted-names-list.txt");
 
 foreach (string name in names)
 {
     Console.WriteLine(name);
+    await file.WriteLineAsync(name);
 }
-
-async Task WriteToFile(string[] orderedNames)
-{
-    await File.WriteAllLinesAsync("sorted-names-list.txt", orderedNames);
-}
-
-WriteToFile(names);
