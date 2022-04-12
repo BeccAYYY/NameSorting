@@ -73,7 +73,9 @@ public class FullNameSorterTests
             SameLastName,
             SameLastAndFirstName,
             DuplicateName,
-            SameMiddleAndLastName
+            SameMiddleAndLastName,
+            SpacesInNames,
+            HyphenatedLastName,
         };
 
     private readonly static object[] ProvidedData = new object[]
@@ -181,6 +183,46 @@ public class FullNameSorterTests
             "Beau Tristan Bentley",
             "Hunter Uriah Mathew Clarke",
             "Joe Uriah Mathew Clarke",
+        }
+    };
+
+    private readonly static object[] SpacesInNames = new object[]
+    {
+        new string[]
+        {
+            " Beau Tristan Bentley",
+            "Marin Alvarez",
+            "Adonis Julius  Archer",
+            "Hunter Uriah Mathew Clarke",
+        },
+        new string[]
+        {
+            "Marin Alvarez",
+            "Adonis Julius  Archer",
+            " Beau Tristan Bentley",
+            "Hunter Uriah Mathew Clarke",
+        }
+    };
+
+    private readonly static object[] HyphenatedLastName = new object[]
+    {
+        new string[]
+        {
+            "Beau Tristan Clarkey",
+            "Marin Alvarez",
+            "Joe Uriah Mathew Clarke",
+            "Adonis Julius Archer",
+            "Vaughn Lewis",
+            "Hunter Uriah Mathew Clarke-Adams",
+        },
+        new string[]
+        {
+            "Marin Alvarez",
+            "Adonis Julius Archer",
+            "Joe Uriah Mathew Clarke",
+            "Hunter Uriah Mathew Clarke-Adams",
+            "Beau Tristan Clarkey",
+            "Vaughn Lewis",
         }
     };
 }
