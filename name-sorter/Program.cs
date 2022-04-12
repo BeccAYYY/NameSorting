@@ -1,5 +1,6 @@
 ﻿using NameSorter;
 
+//Prevents incorrect amount of arguments provided.
 if (args.Length == 0)
 {
     Console.WriteLine("No file path included.");
@@ -7,7 +8,6 @@ if (args.Length == 0)
     Console.WriteLine("<file-path>: A text file with a list on names.");
     return 1;
 }
-
 if (args.Length != 1)
 {
     Console.WriteLine("Too many arguments.");
@@ -16,15 +16,17 @@ if (args.Length != 1)
     return 1;
 }
 
+//Initialise unsortedNames array and try to read the file provided.
 string[] unsortedNames;
 
 try
 {
-    unsortedNames = new FileReader(args[0]).UnorderedNames;
+    string fileName = args[0];
+    unsortedNames = new FileReader(fileName).UnorderedNames;
 }
 catch (FileNotFoundException)
 {
-    Console.WriteLine($"Invalid file name. ({args[0]})");
+    Console.WriteLine($"Invalid file. ({args[0]})");
     return 2;
 }
 
@@ -32,6 +34,7 @@ IEnumerable<string> sortedNames = NameSorter.FullNameSorter.OrderNames(unsortedN
 
 using StreamWriter file = new("sorted-names-list.txt");
 
+//Write each name to Console and the file defined above.
 foreach (string name in sortedNames)
 {
     Console.WriteLine(name);
