@@ -1,18 +1,29 @@
+# Dye & Durham Coding Assessment #
+
 A console application for sorting a list of names by last name, then any given names.
 
-Required:
-.NET 6.0
+## Required ##
 
-How to set-up:
+- .NET 6
+
+## How to set-up ##
 
 1. Download the repository and save on your device.
 
 2. In the Command Prompt, target the "name-sorter" folder.
 
-3. Run "dotnet build" in that directory.
+3. Run the following in that directory.
 
-How to use:
+``` command
+dotnet build
+```
+
+## How to use ##
 
 1. In Command Prompt, target the "name-sorter" folder.
 
-2. Enter "name-sorter file.txt", where file.txt is the list of unsorted names.
+2. Enter the following, replacing "file.txt" with the path to the unsorted names list.
+
+``` command
+name-sorter file.txt
+```
