@@ -4,9 +4,9 @@ namespace NameSorter
     {
         public string[] UnorderedNames;
 
-        public FileReader(string url)
+        public FileReader(string path)
         {
-            UnorderedNames = File.ReadAllLines(url);
+            UnorderedNames = File.ReadAllLines(path);
         }
     }
 }
