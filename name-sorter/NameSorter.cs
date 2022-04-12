@@ -1,6 +1,6 @@
 namespace NameSorter
 {
-    public class NameSorter
+    public class FullNameSorter
     {
         public static string LastName(string fullName)
         {
