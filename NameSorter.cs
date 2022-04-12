@@ -7,9 +7,9 @@ namespace NameSorter
             return fullName.Trim().Split(' ').Last();
         }
 
-        public static string[] OrderNames(string[] namesList)
+        public static IEnumerable<string> OrderNames(string[] namesList)
         {
-            return namesList.OrderBy(name => LastName(name)).ThenBy(name => name).ToArray();
+            return namesList.OrderBy(name => LastName(name)).ThenBy(name => name);
         }
     }
 }
