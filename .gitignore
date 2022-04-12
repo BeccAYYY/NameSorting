@@ -2,3 +2,8 @@ obj
 bin
 .vscode
 sorted-names-list.txt
+name-sorter/name-sorter.runtimeconfig.json
+name-sorter/name-sorter.deps.json
+name-sorter/name-sorter.dll
+name-sorter/name-sorter.exe
+name-sorter/name-sorter.pdb
